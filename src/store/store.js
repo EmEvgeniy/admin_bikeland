@@ -9,7 +9,6 @@ import { AuthApi } from "./middleWares/AuthApi";
 import { DealersApi } from "./middleWares/DealersApi";
 import { GoodsApi } from "./middleWares/GoodsApi";
 import { StatisticApi } from "./middleWares/StatisticApi";
-import { ResourcesApi } from "./middleWares/resourcesApi";
 import { GetUserDataApi } from "./middleWares/GetUserDataApi";
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import {
@@ -33,7 +32,6 @@ const rootReducer = combineReducers({
 	card: cardReducer,
 	date: dateReducer,
 	[AuthApi.reducerPath]: AuthApi.reducer,
-	[ResourcesApi.reducerPath]: ResourcesApi.reducer,
 	[GetUserDataApi.reducerPath]: GetUserDataApi.reducer,
 	[GoodsApi.reducerPath]: GoodsApi.reducer,
 	[StatisticApi.reducerPath]: StatisticApi.reducer,
@@ -46,7 +44,6 @@ const persistConfig = {
 	blacklist: [
 		"burger",
 		"AuthApi",
-		"ResourcesApi",
 		"GoodsApi",
 		"exit",
 		"GetUserDataApi",
@@ -72,7 +69,6 @@ const store = configureStore({
 			AuthApi.middleware,
 			GoodsApi.middleware,
 			GetUserDataApi.middleware,
-			ResourcesApi.middleware,
 			StatisticApi.middleware,
 			DealersApi.middleware,
 		]),

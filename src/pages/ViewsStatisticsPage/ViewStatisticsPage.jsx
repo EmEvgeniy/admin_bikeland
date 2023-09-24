@@ -8,7 +8,6 @@ import classes from "./viewStatisticsPage.module.css";
 const ViewStatisticsPage = () => {
 	const { data: stat = [] } = useGetStatisticQuery();
 	const { data: total } = useGetTotalStatisticQuery();
-	console.log(total);
 	return (
 		<div className={classes.ViewStatisticsPage}>
 			<div className={classes.top}>

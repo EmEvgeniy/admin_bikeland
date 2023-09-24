@@ -9,7 +9,7 @@ import {
 
 const Card = ({ data, index }) => {
 	const dispatch = useDispatch();
-	console.log(data);
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -17,7 +17,9 @@ const Card = ({ data, index }) => {
 			transition={{ delay: `0.${index}`, duration: 0.3 }}
 			className={classes.Card}>
 			<div className={classes.img}>
-				{data.photos.length ? <img src={data.photos[0].photo_url} alt='imagess' /> : null}
+				{data.photos.length ? (
+					<img src={data.photos[0].photo_url} alt='imagess' />
+				) : null}
 			</div>
 			<div className={classes.content}>
 				<p className={classes.title}>{data.title}</p>
