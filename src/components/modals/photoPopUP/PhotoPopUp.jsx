@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classes from "./photoPopUp.module.css";
+import classes from "./photoPopup.module.css";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
