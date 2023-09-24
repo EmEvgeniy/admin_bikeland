@@ -1,0 +1,62 @@
+.UserProfile {
+	position: relative;
+}
+.photo_profile {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #dcdcdc;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.photo_profile:hover {
+	background-color: #6a6a6a;
+	color: #fff;
+}
+.menu {
+	position: absolute;
+	top: 120%;
+	right: 0;
+	width: 250px;
+	padding: 20px 0;
+	font-size: 18px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0px;
+	transform: scale(0);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.menu.active {
+	transform: scale(1);
+	opacity: 1;
+}
+.menu p {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.exit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	color: #c42f15;
+	font-weight: 500;
+	width: 100%;
+	padding: 10px 0;
+}
+.menu p:hover,
+.menu span:hover {
+	background: #ebebeb;
+}

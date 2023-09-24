@@ -1,0 +1,36 @@
+.ApplicationPage {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px 100px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 20px;
+	overflow-y: auto;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	gap: 20px;
+}
+.content {
+	flex-grow: 1;
+	padding: 40px 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	align-items: center;
+	justify-items: flex-start;
+	gap: 20px;
+	width: 100%;
+}
+.bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}

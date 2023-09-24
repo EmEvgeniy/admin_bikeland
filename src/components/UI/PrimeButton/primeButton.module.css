@@ -1,0 +1,17 @@
+.PrimeButton {
+	border-radius: 10px;
+	background: #bb1d1e;
+	color: #fff;
+	font-weight: 500;
+	padding:7px 30px;
+	font-size: 22px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	user-select: none;
+}
+.PrimeButton:hover {
+	background-color: #861f20;
+}
+.PrimeButton:active {
+	transform: scale(0.8, 0.8);
+}

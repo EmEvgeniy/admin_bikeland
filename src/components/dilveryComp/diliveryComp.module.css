@@ -1,0 +1,130 @@
+.DiliveryComp {
+	border-radius: 14px;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	width: 100%;
+	gap: 20px;
+	align-items: center;
+}
+.info,
+.photos {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 20px;
+	width: 100%;
+}
+.input {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #f4f4f4;
+}
+.info textarea {
+	width: 100%;
+	height: 200px;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #f4f4f4;
+}
+.content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	width: 100%;
+	align-items: center;
+	gap: 20px;
+}
+.photo {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s ease;
+}
+.photo img {
+	width: 100%;
+	height: 100%;
+}
+.photo:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+}
+.icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: #fff;
+	font-size: 30px;
+	transform-origin: center;
+	transition: all 0.3s ease;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.icon.active {
+	transform: scale(1);
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+.add_wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 20px;
+}
+.photo_wrap {
+	background: #909090;
+	width: 100%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+.photo_wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+}
+.select,
+.upload {
+	border-radius: 5px;
+	background: #fdfdfd;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+	padding: 10px 20px;
+	color: #bb1d1e;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.select:hover,
+.upload:hover {
+	background: #c1c1c1;
+}
+.select:active,
+.upload:active {
+	transform: scale(0.9, 0.9);
+}

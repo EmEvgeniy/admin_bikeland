@@ -1,0 +1,36 @@
+.LoginPage {
+	width: 100dvw;
+	height: 100dvh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.inner {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 30px;
+}
+.logo{
+	margin-bottom: 40px;
+}
+.logo img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+@media(max-width:600px){
+	.inner {
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 20px;
+	}
+}

@@ -1,0 +1,14 @@
+.TextInput {
+	border-radius: 10px;
+	border: 1px solid #d1d1d1;
+	background: #fff;
+	outline: none;
+	font-size: 22px;
+	padding: 10px 20px;
+	width: 100%;
+	transition: all 0.2 ease;
+}
+.TextInput.active {
+	border: 2px solid #f00;
+	color: #f00;
+}

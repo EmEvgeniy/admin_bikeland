@@ -1,0 +1,129 @@
+.PaymentComp {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 40px;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	gap: 40px;
+}
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+	width: 100%;
+	gap: 20px;
+}
+.list_item {
+	display: grid;
+	grid-template-rows: 1fr auto;
+	align-items: center;
+	justify-items: center;
+	gap: 10px;
+}
+.list_item img {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+	object-fit: contain;
+}
+.list_item_btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.list_item_btns_title,
+.list_item_btns span {
+	border-radius: 5px;
+	background: #f4f4f4;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.add {
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	padding: 15px;
+	font-size: 25px;
+	display: flex;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.add:hover {
+	background-color: #ececec;
+}
+.input {
+	border-radius: 10px;
+	background: #f3f3f3;
+	padding: 30px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	height: 150px;
+	cursor: pointer;
+}
+.add_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.add_wrap_btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+}
+.input_text {
+	border-radius: 5px;
+	background: #f4f4f4;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+}
+.add_wrap_btns_btns {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	cursor: pointer;
+}
+.reset {
+	border-radius: 5px;
+	background: #fdfdfd;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+	color: #bb1d1e;
+	padding: 10px 10px;
+	font-size: 20px;
+	transition: all 0.2s ease;
+}
+.reset:hover {
+	background: #b9b9b9;
+}
+.reset:active {
+	background: #fdfdfd;
+}

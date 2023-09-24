@@ -1,0 +1,97 @@
+.AsideMenu {
+	background: #111;
+	box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.15);
+	height: 100%;
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 20px;
+	color: #fff;
+	z-index: 2;
+	/* position: sticky;
+	top: 0; */
+}
+.close {
+	display: none;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0px 0;
+}
+.logo img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 15px;
+	font-size: 18px;
+	width: 100%;
+}
+.nav_item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	padding: 10px 15px;
+	width: 100%;
+	border: none;
+	user-select: none;
+	background-color: transparent;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.nav_item.active {
+	background-color: #bb1d1e;
+	user-select: none;
+	padding: 10px 15px;
+	border: none;
+}
+.nav_item:hover {
+	background-color: #d0464696;
+}
+.nav_item:focus {
+	outline: none;
+}
+.nav_item:active {
+	background-color: #cf626296;
+}
+
+@media (max-width: 920px) {
+	.AsideMenu {
+		background: #111;
+		box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.15);
+		height: 100%;
+		padding: 10px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 20px;
+		color: #fff;
+		z-index: 10;
+		position: absolute;
+		top: 0;
+		right: -100%;
+		transition: all 0.3s ease;
+	}
+	.AsideMenu.active {
+		right: 0;
+	}
+	.logo {
+		display: none;
+	}
+	.nav {
+		font-size: 15px;
+	}
+}

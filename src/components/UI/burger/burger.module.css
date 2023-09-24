@@ -1,0 +1,12 @@
+.Burger {
+	font-size: 30px;
+	transition: all 0.2s ease;
+	display: none;
+	align-items: center;
+	justify-content: flex-start;
+}
+@media (max-width: 920px) {
+	.Burger {
+		display: flex;
+	}
+}

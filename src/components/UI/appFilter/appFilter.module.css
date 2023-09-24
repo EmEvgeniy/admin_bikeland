@@ -1,0 +1,50 @@
+.GoodsFilter {
+	position: relative;
+	width: 100%;
+	max-width: 390px;
+	z-index: 5;
+}
+.GoodsFilter_wrap {
+	border-radius: 12px;
+	border: 1px solid #ebebeb;
+	background: #fdfdfd;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+}
+.icon {
+	font-size: 30px;
+	color: #4d4d4d;
+}
+.GoodsFilter_wrap input {
+	width: 100%;
+	outline: none;
+	border: none;
+	font-size: 16px;
+}
+.list {
+	border-radius: 12px;
+	border: 1px solid #ebebeb;
+	background: #fdfdfd;
+	width: 100%;
+	padding: 20px;
+	overflow: auto;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 18px;
+	transform: scale(0);
+	z-index: 5;
+	opacity: 0;
+	position: absolute;
+	top: 60px;
+	color: #000;
+}
+.list.active {
+	transform: scale(1);
+	opacity: 1;
+}
