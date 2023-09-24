@@ -11,7 +11,7 @@ const ViewStatisticsPage = () => {
 	return (
 		<div className={classes.ViewStatisticsPage}>
 			<div className={classes.top}>
-				<BarChartComp data={stat} />
+				<BarChartComp data={stat} dataKey={"amount_views"} />
 				<FilterComp />
 			</div>
 			<div className={classes.bottom}>

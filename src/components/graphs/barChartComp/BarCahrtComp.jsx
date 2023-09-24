@@ -9,7 +9,7 @@ import {
 } from "recharts";
 import classes from "./barChartComp.module.css";
 
-const BarChartComp = ({ data }) => {
+const BarChartComp = ({ data,dataKey }) => {
 	// Добавляем информацию о цвете для каждой записи в данных
 	const processedData = data.map((entry, index) => ({
 		...entry,
@@ -35,7 +35,7 @@ const BarChartComp = ({ data }) => {
 					{/* <XAxis dataKey='weekday' /> */}
 					<YAxis />
 					<Tooltip />
-					<Bar dataKey={"amount_views"} fill='fill' barSize={10} />
+					<Bar dataKey={dataKey} fill='fill' barSize={10} />
 				</BarChart>
 			</ResponsiveContainer>
 		</div>

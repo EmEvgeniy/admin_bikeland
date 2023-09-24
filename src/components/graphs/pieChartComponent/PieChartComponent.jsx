@@ -6,7 +6,6 @@ const PieChartComponent = ({ data, title, colors, dataKey }) => {
 	const remainingValue = 100 - value; // Вычисляем оставшееся значение до 100%
 
 	const customLabel = ({ cx, cy, value }) => {
-
 		return (
 			<text
 				x={cx}

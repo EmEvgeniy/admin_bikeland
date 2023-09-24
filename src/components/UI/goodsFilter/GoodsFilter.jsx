@@ -2,12 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import classes from "./goodsFilter.module.css";
 import { BiSearch } from "react-icons/bi";
 import axios from "axios";
-import { useGetAllProductsQuery } from "../../../store/middleWares/GoodsApi";
+import { useDispatch } from "react-redux";
+import {
+	changeCardStatus,
+	getCardValue,
+} from "../../../store/slices/cardSlice";
 
 const GoodsFilter = () => {
 	const [data, setData] = useState([]);
 	const [active, setActive] = useState(false);
 	const [item, setItem] = useState("");
+	const disatch = useDispatch();
 	const refRoot = useRef(null);
 	const handleClickOutside = (e) => {
 		if (refRoot.current && !refRoot.current.contains(e.target)) {
@@ -49,7 +54,13 @@ const GoodsFilter = () => {
 				{data
 					.filter((el) => el.title.includes(item))
 					.map((el, index) => (
-						<p key={index}>{el.title}</p>
+						<p
+							key={index}
+							onClick={() =>
+								disatch(changeCardStatus(true)) & disatch(getCardValue(el))
+							}>
+							{el.title}
+						</p>
 					))}
 			</div>
 		</div>

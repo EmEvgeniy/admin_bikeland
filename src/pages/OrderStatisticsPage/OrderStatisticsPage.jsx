@@ -13,10 +13,11 @@ import classes from "./orderStatistics.module.css";
 const OrderStatisticsPage = () => {
 	const { data: stat = [] } = useGetStatisticQuery();
 	const { data: total } = useGetTotalStatisticQuery();
+	console.log(stat);
 	return (
 		<div className={classes.ViewStatisticsPage}>
 			<div className={classes.top}>
-				<BarChartComp data={stat} />
+				<BarChartComp data={stat} dataKey={"amount_orders"}/>
 				<FilterComp />
 			</div>
 			<div className={classes.bottom}>
