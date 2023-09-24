@@ -18,7 +18,7 @@ const Card = ({ data, index }) => {
 			className={classes.Card}>
 			<div className={classes.img}>
 				{data.photos.length ? (
-					<img src={data.photos[0].photo_url} alt='imagess' />
+					<img src={data?.photos[0]?.photo_url} alt='imagess' />
 				) : null}
 			</div>
 			<div className={classes.content}>

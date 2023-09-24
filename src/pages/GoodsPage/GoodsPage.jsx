@@ -32,7 +32,7 @@ const GoodsPage = () => {
 				.then((res) => setData(res.data));
 		};
 		getData();
-	}, []);
+	});
 	return (
 		<div className={classes.GoodsPage}>
 			{!status ? (
